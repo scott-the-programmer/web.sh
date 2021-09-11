@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-svg-last">
+  <section>
     <menu-header heading="Dumb Projects"></menu-header>
     <div></div>
   </section>

@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-svg-last">
+  <section>
     <menu-header heading="Resume"></menu-header>
     <div></div>
   </section>

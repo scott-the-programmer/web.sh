@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-svg-last">
+  <section class="p-10">
     <menu-header heading="Web"></menu-header>
     <item
       :imageSvg="require('@/assets/icons/react.png')"

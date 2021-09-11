@@ -38,6 +38,14 @@
       </li>
       <li
         class="m-auto text-nav-bar-yellow"
+        :class="navBarElement.programming"
+        v-on:mouseover="onHover($event)"
+        v-on:mouseleave="onHoverLeave($event)"
+      >
+        Programming
+      </li>
+      <li
+        class="m-auto text-nav-bar-yellow"
         :class="navBarElement.dumbprojects"
         v-on:mouseover="onHover($event)"
         v-on:mouseleave="onHoverLeave($event)"

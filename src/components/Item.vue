@@ -4,7 +4,7 @@
       <div class="h-20 w-1/5 text-center m-1 block relative">
         <img :class="imageCss" :src="imageSvg" />
       </div>
-      <p class="px-7 w-2/3 my-auto text-nav-bar-yellow text-xl">
+      <p class="px-7 w-2/3 my-auto text-blog-text text-xl">
         {{ description }}
       </p>
     </div>

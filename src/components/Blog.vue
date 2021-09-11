@@ -1,0 +1,24 @@
+<template>
+  <section class="bg-svg-last">
+    <div class="m-auto w-2/3">
+      <cloud></cloud>
+      <web></web>
+      <dumb-projects></dumb-projects>
+      <resume></resume>
+    </div>
+  </section>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Cloud from '@/components/Cloud.vue';
+import DumbProjects from '@/components/Projects.vue';
+import Web from '@/components/Web.vue';
+import Resume from '@/components/Resume.vue';
+
+export default defineComponent({
+  components: { Cloud, Web, DumbProjects, Resume },
+});
+</script>
+
+<style scoped></style>

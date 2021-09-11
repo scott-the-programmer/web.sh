@@ -5,8 +5,9 @@ module.exports = {
     extend: {
       colors: {
         'nav-bar-yellow': '#DBE8D4',
-        'nav-bar-background': '#525e65',
-        'svg-last': '#657076',
+        'nav-bar-background': '#1B2A60',
+        'svg-last': '#c0d8f7',
+        'blog-text': '#142f6e',
       },
     },
   },
