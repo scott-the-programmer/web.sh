@@ -37,8 +37,15 @@
           backgroundImage: 'url(' + require('@/assets/waves/5.svg') + ')',
         }"
       ></div>
+      <div class="absolute bg-svg-last overflow-divider"></div>
       <div class="z-10 relative">
-        <h1 class="text-center text-nav-bar-yellow text-7xl pt-40">
+        <h1
+          class="
+            text-center text-nav-bar-yellow text-5xl
+            pt-20
+            lg:pt-40 lg:text-7xl
+          "
+        >
           Scott Murray
         </h1>
         <h2 class="text-center text-nav-bar-yellow text-2xl pt-2">
@@ -52,12 +59,16 @@
               w-5/12
               m-auto
               justify-start
-              pt-12
-              text-nav-bar-yellow
+              pt-10
+              lg:pt-12
+              text-blog-text
             "
           >
-            <p class="py-3">Welcome to my website!</p>
-            <p>Description</p>
+            <p class="py-3 text-center">Welcome to my website!</p>
+            <p class="text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              vel ex quis purus vestibulum fringilla ut sit amet lorem. Quisq.
+            </p>
           </div>
         </div>
       </div>
@@ -69,12 +80,19 @@
 
 <style lang="postcss" scoped>
 .hero-bg {
-  z-index: -1;
+  z-index: -2;
   background-color: #142f6e;
+  background: linear-gradient(#142f6e 50%, #c0d8f7 50%);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100vw;
-  height: 600px;
+  height: 45vh;
+}
+
+@media only screen and (min-width: 640px) {
+  .hero-bg {
+    height: 60vh;
+  }
 }
 
 .cloud {
@@ -82,7 +100,7 @@
   position: absolute;
   background-repeat: repeat-x;
   background-size: contain;
-  width: 120vw;
+  width: 100vw;
   height: 60vh;
 }
 
