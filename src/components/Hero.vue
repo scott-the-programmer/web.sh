@@ -64,7 +64,7 @@
           "
         >
           <p class="py-3 lg:text-lg text-center">Welcome to my website!</p>
-          <p class="m-auto text-justify lg:text-lg w-1/2">
+          <p class="m-auto text-justify lg:text-lg lg:w-1/2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel
             ex quis purus vestibulum fringilla ut sit amet lorem. Quisq.
           </p>
