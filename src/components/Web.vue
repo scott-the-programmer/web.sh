@@ -4,11 +4,13 @@
     <item
       :imageSvg="require('@/assets/icons/react.png')"
       :round="true"
+      :inverse="true"
       description="Preferred web framework when it comes to building
       complex reactive front-ends"
     ></item>
     <item
       :imageSvg="require('@/assets/icons/vue.png')"
+      :inverse="true"
       description="For personal use when I want something light-weight!"
     ></item>
   </section>

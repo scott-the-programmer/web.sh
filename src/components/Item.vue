@@ -1,12 +1,21 @@
 <template>
   <div class="py-8">
-    <div class="flex mx-auto justify-center">
-      <div class="h-20 w-1/5 text-center m-1 block relative">
+    <div v-if="!inverse" class="flex mx-auto justify-center">
+      <div class="h-20 w-1/12 text-center m-1 block relative">
         <img :class="imageCss" :src="imageSvg" />
       </div>
       <p class="px-7 w-2/3 my-auto text-blog-text text-xl">
         {{ description }}
       </p>
+    </div>
+
+    <div v-if="inverse" class="flex mx-auto justify-center">
+      <p class="px-7 w-2/3 my-auto text-blog-text text-xl">
+        {{ description }}
+      </p>
+      <div class="h-20 w-1/12 text-center m-1 block relative">
+        <img :class="imageCss" :src="imageSvg" />
+      </div>
     </div>
   </div>
 </template>
@@ -28,11 +37,15 @@ export default defineComponent({
       type: Boolean,
       required: false,
     },
+    inverse: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
   },
   setup(props) {
     let imageCss =
-      'max-h-full max-w-full w-auto h-auto absolute top-0 bottom-0 left-0 right-0 m-auto';
-
+      'max-h-full max-w-full w-auto h-auto absolute top-0 bottom-0 left-0 right-0';
     if (props.round) imageCss += ' rounded-full';
     return { imageCss };
   },

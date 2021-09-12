@@ -1,6 +1,6 @@
 <template>
-  <section class="bg-svg-last w-screen z-10">
-    <div class="m-auto lg:w-2/3">
+  <section class="bg-svg-last w-screen z-10 absolute">
+    <div class="m-auto lg:w-2/4">
       <cloud></cloud>
       <web></web>
       <dumb-projects></dumb-projects>

@@ -1,75 +1,73 @@
 <template>
   <section class="hero-bg">
-    <div>
-      <div
-        class="cloud cloud0"
-        :style="{
-          backgroundImage: 'url(' + require('@/assets/waves/0.svg') + ')',
-        }"
-      ></div>
-      <div
-        class="cloud cloud1"
-        :style="{
-          backgroundImage: 'url(' + require('@/assets/waves/1.svg') + ')',
-        }"
-      ></div>
-      <div
-        class="cloud cloud2"
-        :style="{
-          backgroundImage: 'url(' + require('@/assets/waves/2.svg') + ')',
-        }"
-      ></div>
-      <div
-        class="cloud cloud3"
-        :style="{
-          backgroundImage: 'url(' + require('@/assets/waves/3.svg') + ')',
-        }"
-      ></div>
-      <div
-        class="cloud cloud4"
-        :style="{
-          backgroundImage: 'url(' + require('@/assets/waves/4.svg') + ')',
-        }"
-      ></div>
-      <div
-        class="cloud cloud5"
-        :style="{
-          backgroundImage: 'url(' + require('@/assets/waves/5.svg') + ')',
-        }"
-      ></div>
-      <div class="absolute bg-svg-last overflow-divider"></div>
-      <div class="z-10 relative">
-        <h1
+    <div
+      class="cloud cloud0"
+      :style="{
+        backgroundImage: 'url(' + require('@/assets/waves/0.svg') + ')',
+      }"
+    ></div>
+    <div
+      class="cloud cloud1"
+      :style="{
+        backgroundImage: 'url(' + require('@/assets/waves/1.svg') + ')',
+      }"
+    ></div>
+    <div
+      class="cloud cloud2"
+      :style="{
+        backgroundImage: 'url(' + require('@/assets/waves/2.svg') + ')',
+      }"
+    ></div>
+    <div
+      class="cloud cloud3"
+      :style="{
+        backgroundImage: 'url(' + require('@/assets/waves/3.svg') + ')',
+      }"
+    ></div>
+    <div
+      class="cloud cloud4"
+      :style="{
+        backgroundImage: 'url(' + require('@/assets/waves/4.svg') + ')',
+      }"
+    ></div>
+    <div
+      class="cloud cloud5"
+      :style="{
+        backgroundImage: 'url(' + require('@/assets/waves/5.svg') + ')',
+      }"
+    ></div>
+    <div class="absolute bg-svg-last overflow-divider"></div>
+    <div class="z-10 relative">
+      <h1
+        class="
+          text-center text-nav-bar-yellow text-5xl
+          pt-20
+          lg:pt-40 lg:text-7xl
+        "
+      >
+        Scott Murray
+      </h1>
+      <h2 class="text-center text-nav-bar-yellow text-2xl pt-2">
+        I do cloud stuff!
+      </h2>
+
+      <div>
+        <div
           class="
-            text-center text-nav-bar-yellow text-5xl
-            pt-20
-            lg:pt-40 lg:text-7xl
+            content-center
+            w-5/12
+            m-auto
+            justify-start
+            pt-10
+            lg:pt-12
+            text-blog-text
           "
         >
-          Scott Murray
-        </h1>
-        <h2 class="text-center text-nav-bar-yellow text-2xl pt-2">
-          I do cloud stuff!
-        </h2>
-
-        <div>
-          <div
-            class="
-              content-center
-              w-5/12
-              m-auto
-              justify-start
-              pt-10
-              lg:pt-12
-              text-blog-text
-            "
-          >
-            <p class="py-3 text-center">Welcome to my website!</p>
-            <p class="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              vel ex quis purus vestibulum fringilla ut sit amet lorem. Quisq.
-            </p>
-          </div>
+          <p class="py-3 lg:text-lg text-center">Welcome to my website!</p>
+          <p class="m-auto text-justify lg:text-lg w-1/2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel
+            ex quis purus vestibulum fringilla ut sit amet lorem. Quisq.
+          </p>
         </div>
       </div>
     </div>
@@ -102,6 +100,7 @@
   background-size: contain;
   width: 100vw;
   height: 60vh;
+  transform: rotateZ(360deg); /* Browser trickery */
 }
 
 .cloud0 {
