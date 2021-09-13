@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-svg-last w-screen z-10 absolute">
+  <section class="bg-svg-last w-screen z-10 absolute -mt-1">
     <div class="m-auto lg:w-2/4">
       <cloud></cloud>
       <web></web>
