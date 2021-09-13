@@ -85,10 +85,16 @@
 <style lang="postcss" scoped>
 .hero-bg {
   z-index: -2;
-  background: linear-gradient(#142f6e 50%, #c0d8f7 50%);
+  background: linear-gradient(#142f6e 30%, #c0d8f7 30%);
   background-repeat: no-repeat;
   background-size: contain;
   border-image-width: 0px !important;
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-bg {
+    background: linear-gradient(#142f6e 40%, #c0d8f7 40%);
+  }
 }
 
 @media only screen and (min-width: 640px) {
