@@ -1,5 +1,5 @@
 <template>
-  <section class="hero-bg">
+  <div class="hero-bg">
     <div
       class="cloud cloud0"
       :style="{
@@ -58,20 +58,26 @@
             w-5/12
             m-auto
             justify-start
-            pt-10
+            pt-4
             lg:pt-12
             text-blog-text
           "
         >
-          <p class="py-3 lg:text-lg text-center">Welcome to my website!</p>
+          <p class="py-3 lg:text-lg text-center">
+            <b>Welcome to my website!</b>
+          </p>
           <p class="m-auto text-justify lg:text-lg lg:w-1/2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel
-            ex quis purus vestibulum fringilla ut sit amet lorem. Quisq.
+            Experienced <del>bug</del> <b><em>clean code</em></b> typer who
+            resides in Auckland, New Zealand. Buyer of games that I will never
+            play.
+          </p>
+          <p class="pt-5 m-auto text-justify lg:text-lg lg:w-1/2">
+            <b>I'm mainly involved in ☁️ cloud and deploying code 🚀 </b>
           </p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup lang="ts"></script>
@@ -79,12 +85,10 @@
 <style lang="postcss" scoped>
 .hero-bg {
   z-index: -2;
-  background-color: #142f6e;
   background: linear-gradient(#142f6e 50%, #c0d8f7 50%);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100vw;
-  height: 45vh;
+  border-image-width: 0px !important;
 }
 
 @media only screen and (min-width: 640px) {
@@ -99,7 +103,7 @@
   background-repeat: repeat-x;
   background-size: contain;
   width: 100vw;
-  height: 60vh;
+  height: 63vh;
   transform: rotateZ(360deg); /* Browser trickery */
 }
 
