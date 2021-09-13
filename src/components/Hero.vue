@@ -55,7 +55,7 @@
         <div
           class="
             content-center
-            w-5/12
+            w-3/5
             m-auto
             justify-start
             pt-4
@@ -68,8 +68,8 @@
           </p>
           <p class="m-auto text-justify lg:text-lg lg:w-1/2">
             Experienced <del>bug</del> <b><em>clean code</em></b> typer who
-            resides in Auckland, New Zealand. Buyer of games that I will never
-            play.
+            resides in Auckland, New Zealand. Actively purchasing video games
+            that I will never play.
           </p>
           <p class="pt-5 m-auto text-justify lg:text-lg lg:w-1/2">
             <b>I'm mainly involved in ☁️ cloud and deploying code 🚀 </b>
@@ -93,13 +93,13 @@
 
 @media only screen and (min-width: 500px) {
   .hero-bg {
-    background: linear-gradient(#142f6e 40%, #c0d8f7 40%);
+    background: linear-gradient(#142f6e 50%, #c0d8f7 40%);
   }
 }
 
 @media only screen and (min-width: 640px) {
   .hero-bg {
-    height: 60vh;
+    height: 500px;
   }
 }
 
@@ -109,7 +109,7 @@
   background-repeat: repeat-x;
   background-size: contain;
   width: 100vw;
-  height: 63vh;
+  height: 500px;
   transform: rotateZ(360deg); /* Browser trickery */
 }
 
