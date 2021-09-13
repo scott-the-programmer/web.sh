@@ -1,8 +1,20 @@
 <template>
-  <nav class="bg-nav-bar-background w-screen shadow-2xl">
+  <div class="bg-nav-bar-background w-screen overflow-hidden">
+    <div class="float-right h-10 table">
+      <div class="m-auto table-cell align-middle pr-5">
+        <img class="h-10" :src="require('@/assets/icons/menu.svg')" />
+      </div>
+    </div>
+    <!-- <ul class="md:hidden">
+      <li>Home</li>
+      <li>Cloud</li>
+      <li>Web</li>
+      <li>Programming</li>
+      <li>Resume</li>
+    </ul> -->
     <ul
       class="
-        flex
+        md:flex
         justify-center
         text-center
         align-middle
@@ -10,6 +22,7 @@
         m-auto
         space-x-6
         h-10
+        hidden
       "
     >
       <li
@@ -61,7 +74,7 @@
         Resume
       </li>
     </ul>
-  </nav>
+  </div>
 </template>
 
 <script lang="ts">
