@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-nav-bar-background shadow-2xl w-screen">
+  <nav class="bg-nav-bar-background w-screen shadow-2xl">
     <ul
       class="
         flex
