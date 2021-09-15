@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-bg">
+  <div class="hero-bg w-screen">
     <div
       class="cloud cloud0"
       :style="{
