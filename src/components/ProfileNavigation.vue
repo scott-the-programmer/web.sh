@@ -57,19 +57,11 @@
         </li>
         <li
           class="m-auto text-nav-bar-yellow"
-          :class="navBarElement.dumbprojects"
-          v-on:mouseover="onHover($event)"
-          v-on:mouseleave="onHoverLeave($event)"
-        >
-          Dumb Projects
-        </li>
-        <li
-          class="m-auto text-nav-bar-yellow"
           :class="navBarElement.resume"
           v-on:mouseover="onHover($event)"
           v-on:mouseleave="onHoverLeave($event)"
         >
-          Resume
+          My Journey
         </li>
       </ul>
     </div>
@@ -89,7 +81,7 @@
       <li>Cloud</li>
       <li>Web</li>
       <li>Programming</li>
-      <li class="pb-2">Resume</li>
+      <li class="pb-2">My Journey</li>
     </ul>
   </div>
 </template>
