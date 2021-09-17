@@ -1,17 +1,28 @@
 <template>
-  <div class="py-8">
+  <div class="py-10">
     <div v-if="!inverse" class="xl:flex xl:mx-auto justify-center">
-      <div class="h-20 w-20 m-auto xl:m-1 block relative pb-28">
+      <div
+        class="
+          image-container
+          h-20
+          w-20
+          ml-auto
+          mr-auto
+          mt-auto
+          xl:m-1
+          block
+          relative
+        "
+      >
         <img :class="imageCss" :src="imageSvg" />
       </div>
       <p
         class="
           px-7
-          w-2/3
+          lg:w-2/3
           m-auto
           xl:my-auto
-          text-blog-text text-xl
-          sm:text-center
+          text-blog-text text-xl text-center
           xl:text-left
         "
       >
@@ -23,17 +34,28 @@
       <p
         class="
           px-7
-          w-2/3
+          lg:w-2/3
           m-auto
           xl:my-auto
-          text-blog-text text-xl
-          sm:text-center
+          text-blog-text text-xl text-center
           xl:text-left
         "
       >
         {{ description }}
       </p>
-      <div class="h-20 w-20 m-auto xl:m-1 block relative pb-28">
+      <div
+        class="
+          image-container
+          h-20
+          w-20
+          ml-auto
+          mr-auto
+          mt-auto
+          xl:m-1
+          block
+          relative
+        "
+      >
         <img :class="imageCss" :src="imageSvg" />
       </div>
     </div>
@@ -56,6 +78,12 @@ export default defineComponent({
     round: {
       type: Boolean,
       required: false,
+      default: false,
+    },
+    rounded: {
+      type: Boolean,
+      required: false,
+      default: false,
     },
     inverse: {
       type: Boolean,
@@ -65,11 +93,21 @@ export default defineComponent({
   },
   setup(props) {
     let imageCss =
-      'max-h-full max-w-full w-auto h-auto absolute top-0 bottom-0 left-0 right-0';
+      'max-h-full max-w-full m-auto w-full h-full absolute top-0 bottom-0 left-0 right-0';
     if (props.round) imageCss += ' rounded-full';
+    if (props.rounded) imageCss += ' rounded-md';
     return { imageCss };
   },
 });
 </script>
 
-<style></style>
+<style>
+.image-container {
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 1024px) {
+  .image-container {
+    margin-bottom: auto;
+  }
+}
+</style>
