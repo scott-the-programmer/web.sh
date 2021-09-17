@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-10">
+  <section id="journey" class="pt-10">
     <menu-header heading="My Journey"></menu-header>
     <journey-item
       :imageSvg="require('@/assets/icons/zip.jpg')"

@@ -1,5 +1,5 @@
 <template>
-  <section class="pt-10">
+  <section id="programming" class="pt-10">
     <menu-header heading="Programming"></menu-header>
     <item
       :imageSvg="require('@/assets/icons/net.png')"

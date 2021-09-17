@@ -2,10 +2,7 @@
   <div>
     <div class="bg-nav-bar-background w-screen absolute z-30">
       <div class="md:hidden float-right h-10 table z-30">
-        <div
-          v-on:click="expandMenu()"
-          class="m-auto table-cell align-middle pr-5"
-        >
+        <div v-on:click="menu()" class="m-auto table-cell align-middle pr-5">
           <img class="h-10" :src="require('@/assets/icons/menu.svg')" />
         </div>
       </div>
@@ -25,19 +22,11 @@
       >
         <li
           class="m-auto text-nav-bar-yellow"
-          :class="navBarElement.home"
-          v-on:mouseover="onHover($event)"
-          v-on:mouseleave="onHoverLeave($event)"
-        >
-          Home
-        </li>
-        <li
-          class="m-auto text-nav-bar-yellow"
           :class="navBarElement.cloud"
           v-on:mouseover="onHover($event)"
           v-on:mouseleave="onHoverLeave($event)"
         >
-          Cloud
+          <a href="#cloud">Cloud</a>
         </li>
         <li
           class="m-auto text-nav-bar-yellow"
@@ -45,7 +34,7 @@
           v-on:mouseover="onHover($event)"
           v-on:mouseleave="onHoverLeave($event)"
         >
-          Web
+          <a href="#web">Web</a>
         </li>
         <li
           class="m-auto text-nav-bar-yellow"
@@ -53,7 +42,7 @@
           v-on:mouseover="onHover($event)"
           v-on:mouseleave="onHoverLeave($event)"
         >
-          Programming
+          <a href="#programming">Programming</a>
         </li>
         <li
           class="m-auto text-nav-bar-yellow"
@@ -61,7 +50,7 @@
           v-on:mouseover="onHover($event)"
           v-on:mouseleave="onHoverLeave($event)"
         >
-          My Journey
+          <a href="#journey">My Journey</a>
         </li>
       </ul>
     </div>
@@ -77,11 +66,18 @@
       "
       :class="mobileNavClass"
     >
-      <li>Home</li>
-      <li>Cloud</li>
-      <li>Web</li>
-      <li>Programming</li>
-      <li class="pb-2">My Journey</li>
+      <li>
+        <a v-on:click="menu()" href="#cloud">Cloud</a>
+      </li>
+      <li>
+        <a v-on:click="menu()" href="#web">Web</a>
+      </li>
+      <li>
+        <a v-on:click="menu()" href="#programming">Programming</a>
+      </li>
+      <li class="pb-2">
+        <a v-on:click="menu()" href="#journey">My Journey</a>
+      </li>
     </ul>
   </div>
 </template>
@@ -95,7 +91,7 @@ export default defineComponent({
     const mobileNav: Ref<boolean> = ref(false);
     const mobileNavClass: Ref<string> = ref('hidden');
 
-    const expandMenu = () => {
+    const menu = () => {
       const open = mobileNav.value;
       if (open) {
         mobileNav.value = false;
@@ -121,7 +117,7 @@ export default defineComponent({
       onHover,
       onHoverLeave,
       navBarElement,
-      expandMenu,
+      menu,
       mobileNavClass,
       mobileNav,
     };
