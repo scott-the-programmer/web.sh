@@ -105,7 +105,7 @@ export default defineComponent({
 .image-container {
   margin-bottom: 3rem;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   .image-container {
     margin-bottom: auto;
   }
