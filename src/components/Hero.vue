@@ -66,12 +66,12 @@
           <p class="py-3 lg:text-lg text-center">
             <b>Welcome to my website!</b>
           </p>
-          <p class="m-auto text-justify lg:text-lg lg:w-1/2">
+          <p class="m-auto text-justify lg:text-lg lg:w-96">
             Experienced <del>bug</del> <b><em>clean code</em></b> typer who
             resides in Auckland, New Zealand. Actively purchasing video games
             that I will never play.
           </p>
-          <p class="pt-5 m-auto text-justify lg:text-lg lg:w-1/2">
+          <p class="pt-5 m-auto text-center lg:text-lg lg:w-96">
             <b>I'm mainly involved in ☁️ cloud and deploying code 🚀 </b>
           </p>
           <social></social>
@@ -107,7 +107,7 @@ export default defineComponent({
 
 @media only screen and (min-width: 640px) {
   .hero-bg {
-    height: 650px;
+    height: 600px;
   }
 }
 
