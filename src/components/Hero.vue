@@ -74,13 +74,21 @@
           <p class="pt-5 m-auto text-justify lg:text-lg lg:w-1/2">
             <b>I'm mainly involved in ☁️ cloud and deploying code 🚀 </b>
           </p>
+          <social></social>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script lang="ts">
+import { defineComponent } from 'vue';
+import Social from '@/components/Social.vue';
+
+export default defineComponent({
+  components: { Social },
+});
+</script>
 
 <style lang="postcss" scoped>
 .hero-bg {
@@ -99,7 +107,7 @@
 
 @media only screen and (min-width: 640px) {
   .hero-bg {
-    height: 500px;
+    height: 650px;
   }
 }
 
