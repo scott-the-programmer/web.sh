@@ -17,9 +17,3 @@ jobs:
         run: |
           npm install
           npm run build
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          path: dist 
-          retention-days: 1
-          name: web
