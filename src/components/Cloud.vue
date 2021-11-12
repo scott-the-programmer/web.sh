@@ -1,5 +1,5 @@
 <template>
-  <section id="cloud" class="pt-10">
+  <section id="cloud" class="pt-20">
     <menu-header heading="Cloud"></menu-header>
     <item
       :imageSvg="require('@/assets/icons/azure.svg')"
