@@ -117,7 +117,7 @@ export default defineComponent({
   background-repeat: repeat-x;
   background-size: contain;
   width: 100vw;
-  height: 500px;
+  height: 524px;
   transform: rotateZ(360deg); /* Browser trickery */
 }
 
