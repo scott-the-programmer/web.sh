@@ -107,7 +107,7 @@ export default defineComponent({
 
 @media only screen and (min-width: 640px) {
   .hero-bg {
-    height: 600px;
+    height: 625px;
   }
 }
 
